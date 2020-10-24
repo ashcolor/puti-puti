@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="jp.gr.java_conf.putiputi"
+      android:versionCode="2"
+      android:versionName="1.1.0">
+      
+      <uses-sdk android:minSdkVersion="14"
+           android:targetSdkVersion="17"/>
+      <uses-permission android:name="android.permission.VIBRATE"/>
+      
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.Light" 
+        >
+        <activity android:label="@string/app_name" android:name=".Main" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="EndressMode" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.google.ads.AdActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity android:name="TimeAttackMode" android:screenOrientation="portrait"></activity>
+        <activity android:name="Result" android:screenOrientation="portrait"></activity>
+    </application>
+     <uses-permission android:name="android.permission.INTERNET"/>
+ 	 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+</manifest>
